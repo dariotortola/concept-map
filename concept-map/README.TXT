@@ -1,24 +1,12 @@
-Idea:
-1. El mundo de juego, en plan investigativo sandbox, puede verse como un grafo. Los vértices del grafo son las personas, lugares, objetos, eventos, etc que existen en el mundo
-2. Las aristas del grafo son las relaciones entre los elementos: las personas que participaron en un evento, que viven en un lugar, que crean un objeto, etc
-3. Tanto las aristas como los vértices tienen distinta información: un lugar puede tener planos, una persona tiene un pasado, unos objetivos, etc
-4. Cada fragmento de información puede ser conocido por un grupo de personas
+Mind maps
+https://en.wikipedia.org/wiki/Mind_map
+Básicamente se pone un concepto central y se van encadenando conceptos relacionados
+En nuestro caso no es suficiente porque no tenemos un tema central
 
-Modelo:
-1. Los vértices del grafo son MapObject y sus subclases
-2. Las aristas del grafo son Relationship
-3. La información son instancias de Information
-4. El hecho de que un fragmento sea conocido o no por una persona se implementa con Knowledge
-5. El mundo de esa información se guarda en un elemento KnowledgeMap
+http://www.grotto-networking.com/JUNG/JUNG2-Tutorial.pdf
 
-VERSION 1
-Hacemos un mapa con MapObject (PersonObject, PcObject), Relationship, Knowledge
-Lo mostramos como grafo
+JUNG está dándome algunos fallos con visualizaciones básicas, como ver el nombre de los edges (VertexLabelTransformer)
+Voy a ponerme con otras cosas mientras para ver si lo arreglan en algún momento, pero si no, tendré que ponerme yo mismo
+Por otro lado, puede que tampoco fuera mala idea, considerando las cosas extrañas que me parecen con lo de sus tagging interfaces, etc
 
-VERSION 2
-Añadimos información a cada objeto y relación
-
-DESARROLLO FUTURO
-Información basada en archivos (imágenes, sonidos, archivos adjuntos como pdf, word, etc)
-
-Jung utiliza google.guava, pero podríamos usar Java 8 directamente y ahorrarnos esa dependencia
+To edit information of MapItems we need first something to edit the common fields (name and known) and then several things to edit its information's content
