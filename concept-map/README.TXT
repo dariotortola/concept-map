@@ -10,3 +10,5 @@ Voy a ponerme con otras cosas mientras para ver si lo arreglan en algún momento
 Por otro lado, puede que tampoco fuera mala idea, considerando las cosas extrañas que me parecen con lo de sus tagging interfaces, etc
 
 To edit information of MapItems we need first something to edit the common fields (name and known) and then several things to edit its information's content
+
+Para visualizar necesitamos un layout: a partir de un grafo da unas coordenadas para sus elementos
